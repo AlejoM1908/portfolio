@@ -25,7 +25,7 @@ export function NavBar(): JSX.Element {
   }, [])
 
   return isMounted ? (
-    <nav className="z-40 w-full fixed top-0 py-6">
+    <nav className="z-40 w-full fixed top-2">
       {isMediumScreen ? (
         <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       ) : (
@@ -39,15 +39,15 @@ export function NavBar(): JSX.Element {
 
 function FullMenu(): JSX.Element {
   return (
-    <ul className="flex items-center justify-evenly mx-auto w-5/6">
-      <li className="flex flex-row flex-1 justify-between pr-[12%] pl-[2%]">
-        <NavButton label="About Me" href="/about" />
+    <ul className="flex items-center justify-evenly h-16 mx-auto w-5/6">
+      <li className="flex flex-row flex-1 justify-between pr-[8%] pl-[2%]">
+        <NavButton label="About" href="/about" />
         <NavButton label="Blog" href="/blog" />
       </li>
       <li>
         <Logo />
       </li>
-      <li className="flex flex-row flex-1 justify-between pl-[12%] pr-[2%]">
+      <li className="flex flex-row flex-1 justify-between pl-[8%] pr-[2%]">
         <NavButton label="Projects" href="/projects" />
         <ThemeToggle />
       </li>
