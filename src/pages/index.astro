@@ -1,10 +1,8 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro'
-import { NavBar } from '../components/molecules/NavBar'
-import { Hero } from '../components/molecules/Hero'
+import { UnderConstruction } from '../components/atoms/UnderConstruction';
 ---
 
 <MainLayout>
-  <NavBar client:load />
-  <Hero className="py-32 px-5 mt-[95px]" />
+  <UnderConstruction client:load/>
 </MainLayout>
